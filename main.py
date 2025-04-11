@@ -66,11 +66,11 @@ if st.button('Thời sự'):
         for summary in df['summary']:
             try:
                 if count % 2 == 0:
-                    translated = toVN.gemini_api(summary, "AIzaSyDwdDVCXHms_Us52qAeHN-C-EBWpHevnjw")
+                    translated = toVN.gemini_api(summary, "")
                 elif count % 3 == 0:
-                    translated = toVN.gemini_api(summary, "AIzaSyAxQ120-5y74hULGbmxw4ZEAkmS8l-tmzM")
+                    translated = toVN.gemini_api(summary, "")
                 else:
-                    translated = toVN.gemini_api(summary, "AIzaSyBV753dJdxKKTkBYE4eW1lvUiUQSyqMVNE")
+                    translated = toVN.gemini_api(summary, "")
                 processed = process_text(translated)
                 translated_texts.append(processed)
                 st.write(processed)
@@ -99,11 +99,11 @@ if st.button('Thể thao'):
         for summary in df['summary']:
             try:
                 if count % 2 == 0:
-                    translated = toVN.gemini_api(summary, "AIzaSyDwdDVCXHms_Us52qAeHN-C-EBWpHevnjw")
+                    translated = toVN.gemini_api(summary, "")
                 elif count % 3 == 0:
-                    translated = toVN.gemini_api(summary, "AIzaSyAxQ120-5y74hULGbmxw4ZEAkmS8l-tmzM")
+                    translated = toVN.gemini_api(summary, "")
                 else:
-                    translated = toVN.gemini_api(summary, "AIzaSyBV753dJdxKKTkBYE4eW1lvUiUQSyqMVNE")
+                    translated = toVN.gemini_api(summary, "")
                 processed = process_text(translated)
                 translated_texts.append(processed)
                 st.write(processed)
